@@ -5,6 +5,7 @@ from datetime import datetime
 import os
 from dotenv import load_dotenv
 from typing import Union
+from keep_alive import start
 
 load_dotenv()
 
@@ -231,6 +232,7 @@ def main():
     
     try:
         print("Iniciando o bot...")
+        start()
         bot.run(token)
     except discord.LoginFailure:
         print("="*50)
