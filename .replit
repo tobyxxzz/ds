@@ -29,5 +29,5 @@ args = "python bot.py"
 outputType = "console"
 
 [[ports]]
-localPort = 5000
+localPort = 8080
 externalPort = 80
